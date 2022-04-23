@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prettier": "prettier --single-quote --no-semi --trailing-comma es5 --write .",
     "prepare": "husky install",
     "release": "standard-version"
   },

@@ -10,12 +10,7 @@
     "plugin:react-hooks/recommended",
     "plugin:@next/next/recommended"
   ],
-  "plugins": [
-    "react",
-    "prettier",
-    "import",
-    "@typescript-eslint"
-  ],
+  "plugins": ["react", "prettier", "import", "@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -37,14 +32,14 @@
     "prettier/prettier": [
       "warn",
       {
-        "printWidth": 100,
+        "printWidth": 80,
         "trailingComma": "es5",
         "tabWidth": 2,
         "semi": false,
         "singleQuote": true,
         "bracketSpacing": true,
         "arrowParens": "always",
-        "endOfLine": "auto"
+        "endOfLine": "lf"
       }
     ],
     "@typescript-eslint/no-unused-vars": [
@@ -97,25 +92,13 @@
       },
       {
         "blankLine": "always",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
+        "prev": ["const", "let", "var"],
         "next": "*"
       },
       {
         "blankLine": "any",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": [
-          "const",
-          "let",
-          "var"
-        ]
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
       }
     ]
   }
