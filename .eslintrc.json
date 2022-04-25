@@ -8,9 +8,11 @@
     "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:@next/next/recommended"
+    "plugin:@next/next/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:storybook/recommended"
   ],
-  "plugins": ["react", "prettier", "import", "@typescript-eslint"],
+  "plugins": ["react", "import", "@typescript-eslint", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
