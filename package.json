@@ -13,7 +13,12 @@
     "tailwind:build": "rm -rf ./styles/styles.css && tailwindcss -i ./styles/globals.css -o ./styles/styles.css --minify",
     "tailwind:dev": "rm -rf ./styles/styles.css && tailwindcss -i ./styles/globals.css -o ./styles/styles.css --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "yarn tailwind:build && build-storybook"
+    "build-storybook": "yarn tailwind:build && build-storybook",
+    "cy:open": "cypress open",
+    "cy:open:mobile": "cypress open --config viewportWidth=375,viewportHeight=667",
+    "cy:open:ct": "cypress open-ct",
+    "cy:run": "cypress run",
+    "cy:run:mobile": "cypress run --config viewportWidth=375,viewportHeight=667"
   },
   "dependencies": {
     "next": "12.1.5",
@@ -37,6 +42,7 @@
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "babel-loader": "^8.2.5",
+    "cypress": "^9.6.0",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
     "eslint-config-prettier": "^8.5.0",
