@@ -2,6 +2,22 @@ import type { NextPage } from 'next'
 
 import Head from 'next/head'
 
+import { getEntries } from '../services'
+
+export const getServerSideProps = async () => {
+  const entries = await getEntries({
+    content_type: 'recipe',
+    'fields.slug': 'ceviche',
+    include: 10,
+  })
+
+  if (entries) {
+    return { props: entries }
+  }
+
+  return { props: null }
+}
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -11,15 +27,12 @@ const Home: NextPage = () => {
         <link href="/favicon.ico" rel="icon" />
       </Head>
 
-      <h1 className="font-JetBrainsMono text-2xl font-light">
-        Synsisal® - Sisal Without Limits
-      </h1>
-      <h1 className="font-JetBrainsMono text-2xl font-normal">
-        Synsisal® - Sisal Without Limits
-      </h1>
-      <main className="font-JetBrainsMono text-2xl font-medium">main</main>
+      <header className="font-JetBrainsMono text-2xl font-normal">
+        Header
+      </header>
+      <main className="font-JetBrainsMono text-2xl font-medium">Main</main>
       <footer className="font-JetBrainsMono text-2xl font-semibold">
-        footer
+        Footer
       </footer>
     </div>
   )

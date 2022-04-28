@@ -21,6 +21,7 @@
     "cy:run:mobile": "cypress run --config viewportWidth=375,viewportHeight=667"
   },
   "dependencies": {
+    "contentful": "^9.1.27",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
