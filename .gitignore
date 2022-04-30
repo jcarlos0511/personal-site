@@ -42,3 +42,5 @@ yarn-error.log*
 
 # Styles
 /styles/styles.css
+
+build-storybook.log
