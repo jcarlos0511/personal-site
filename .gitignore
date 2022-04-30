@@ -33,3 +33,14 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+/.husky
+
+/.vscode
+
+/.eslintcache
+
+# Styles
+/styles/styles.css
+
+build-storybook.log
