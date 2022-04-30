@@ -52,3 +52,6 @@ CHANGELOG.md
 storybook-static
 
 /.vscode
+
+# Styles
+/styles/styles.css
