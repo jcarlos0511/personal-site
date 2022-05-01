@@ -8,7 +8,7 @@
     <a href="https://dashboard.cypress.io/">
       <img src="https://img.shields.io/endpoint?logo=cypress&url=https://dashboard.cypress.io/" alt="cypress">
     </a>
-    <a href="https://626cb2e03c2aef004a929f5f-vutujcrmuv.chromatic.com/?path=/story/atoms-button--default">
+    <a href="https://626cb2e03c2aef004a929f5f-hwukzvophf.chromatic.com/?path=/story/atoms-button--primary">
       <img src="https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white" alt="storybook">
     </a>
 </div>
