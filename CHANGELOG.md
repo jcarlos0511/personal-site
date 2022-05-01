@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/jcarlos0511/personal-site/compare/v0.3.0...v0.3.1) (2022-05-01)
+
+
+### Bug Fixes
+
+* update readme.md ([367a864](https://github.com/jcarlos0511/personal-site/commit/367a864d0b25bd3a19f3ba1a9a3e8074d802fbe4))
+
 ## [0.3.0](https://github.com/jcarlos0511/personal-site/compare/v0.2.0...v0.3.0) (2022-05-01)
 
 
