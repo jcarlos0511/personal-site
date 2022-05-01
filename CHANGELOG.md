@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/jcarlos0511/personal-site/compare/v0.2.0...v0.3.0) (2022-05-01)
+
+
+### Features
+
+* add atom button ([4fb1e6a](https://github.com/jcarlos0511/personal-site/commit/4fb1e6a262dc04c2e929e0d9a20ab694449bff3c))
+* add test for atom button component ([0e0b219](https://github.com/jcarlos0511/personal-site/commit/0e0b219a7c3194b71ca06fc09587999339ff3982))
+
 ## 0.2.0 (2022-04-30)
 
 
