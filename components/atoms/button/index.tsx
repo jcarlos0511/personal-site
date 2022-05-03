@@ -20,9 +20,9 @@ const classesButtonSize: Record<ButtonSize, string> = {
 
 const classesButtonVariant: Record<ButtonVariant, string> = {
   [ButtonVariant.PRIMARY]:
-    'border-primary bg-primary text-foreground hover:text-white shadow-primary-light hover:shadow-primary-light hover:shadow',
+    'border-primary bg-primary text-foreground hover:text-white shadow-primary-light hover:shadow-primary-light hover:shadow-md',
   [ButtonVariant.SECONDARY]:
-    'border-background bg-background text-foreground hover:text-white shadow-background hover:shadow-background hover:shadow',
+    'border-background bg-background text-foreground hover:text-white shadow-background hover:shadow-background hover:shadow-md',
   [ButtonVariant.TERTIARY]:
     'border-transparent text-background hover:text-black hover:shadow-md',
 }
