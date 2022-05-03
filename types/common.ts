@@ -24,6 +24,12 @@ export const colors: Record<Theme['color'], string> = {
 
 export type Direction = 'up' | 'down' | 'left' | 'right'
 
+export const classesDirection: Record<Direction, string> = {
+  down: 'rotate-180',
+  left: '-rotate-90',
+  right: 'rotate-90',
+  up: '',
+}
 export interface IconsProps extends SVGProps<SVGSVGElement> {
   color?: string
   direction?: Direction

@@ -1,11 +1,7 @@
 import { FlagPEIcon, FlagUSIcon, NavArrowIcon } from '../../../assets/icons'
 import { colors, IconsProps, Theme } from '../../../types'
 
-export enum IconType {
-  FLAG_PE = 'flag-pe',
-  FLAG_US = 'flag-us',
-  NAV_ARROW = 'nav-arrow',
-}
+export type IconType = 'flag-PE' | 'flag-US' | 'nav-arrow'
 
 export interface IconProps {
   color?: Theme['color']
@@ -15,9 +11,9 @@ export interface IconProps {
 }
 
 const icons: Record<IconType, (props: IconsProps) => JSX.Element> = {
-  [IconType.FLAG_PE]: (props) => <FlagPEIcon {...props} />,
-  [IconType.FLAG_US]: (props) => <FlagUSIcon {...props} />,
-  [IconType.NAV_ARROW]: (props) => <NavArrowIcon {...props} />,
+  'flag-PE': (props) => <FlagPEIcon {...props} />,
+  'flag-US': (props) => <FlagUSIcon {...props} />,
+  'nav-arrow': (props) => <NavArrowIcon {...props} />,
 }
 
 export const Icon = ({ type, ...rest }: IconProps) => {

@@ -1,9 +1,15 @@
-import { IconsProps } from '../../types'
+import { classesDirection, IconsProps } from '../../types'
 
-export const NavArrowIcon = ({ color, size = 24, ...rest }: IconsProps) => {
+export const NavArrowIcon = ({
+  color,
+  direction = 'up',
+  size = 24,
+  ...rest
+}: IconsProps) => {
   return (
     <svg
       aria-label="nav-arrow icon"
+      className={`${classesDirection[direction]} ${rest.className ?? ''}`}
       fill="none"
       height={size}
       strokeWidth={1.5}

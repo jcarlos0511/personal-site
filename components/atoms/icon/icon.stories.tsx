@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react'
 
-import { Icon, IconProps, IconType } from '.'
+import { Icon, IconProps } from '.'
 
 export default {
   title: 'Atoms/Icon',
@@ -9,10 +9,10 @@ export default {
 
 const Template: Story<IconProps> = (args) => <Icon {...args} />
 
-export const Primary = Template.bind({})
-Primary.args = {
+export const Default = Template.bind({})
+Default.args = {
   color: 'primary',
   direction: 'down',
   size: 24,
-  type: IconType.FLAG_US,
+  type: 'nav-arrow',
 }
