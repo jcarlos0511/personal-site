@@ -12,8 +12,8 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />
 export const Primary = Template.bind({})
 Primary.args = {
   label: 'Primary',
-  variant: ButtonVariant.PRIMARY,
   size: ButtonSize.NORMAL,
+  variant: ButtonVariant.PRIMARY,
 }
 
 export const Secondary = Template.bind({})
@@ -28,8 +28,18 @@ Tertiary.args = {
   variant: ButtonVariant.TERTIARY,
 }
 
-export const Icon = Template.bind({})
-Icon.args = {
-  label: 'Tertiary',
-  variant: ButtonVariant.TERTIARY,
+export const WithIcon = Template.bind({})
+WithIcon.args = {
+  iconLeft: {
+    size: 24,
+    type: 'flag-PE',
+  },
+  iconRight: {
+    color: 'background',
+    direction: 'down',
+    size: 24,
+    type: 'nav-arrow',
+  },
+  label: 'ESPAÑOL',
+  variant: ButtonVariant.SECONDARY,
 }

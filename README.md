@@ -106,12 +106,17 @@ $ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+</br>
+
 ## Acknowledgements
 
 - [React TypeScript Cheatsheets](https://react-typescript-cheatsheet.netlify.app/)
 - [How to use React Context effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively)
 - [Deploy storybook with chromatic](https://storybook.js.org/tutorials/intro-to-storybook/react/en/deploy/)
+- [Free open-source icons - iconoir](https://iconoir.com/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
+
+</br>
 
 ## Contact
 
