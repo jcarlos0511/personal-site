@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/jcarlos0511/personal-site/compare/v0.3.1...v0.4.0) (2022-05-05)
+
+
+### Features
+
+* add atom icon ([40c8e63](https://github.com/jcarlos0511/personal-site/commit/40c8e6339d3b980eedcbb98f0e3a041a5be8cfe8))
+
+
+### Bug Fixes
+
+* apply icon props in atom button component ([55048b0](https://github.com/jcarlos0511/personal-site/commit/55048b077831517ea7a3cb49c4ac9328a771130d))
+
 ### [0.3.1](https://github.com/jcarlos0511/personal-site/compare/v0.3.0...v0.3.1) (2022-05-01)
 
 
