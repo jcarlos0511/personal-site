@@ -1,5 +1,5 @@
 import { FlagPEIcon, FlagUSIcon, NavArrowIcon } from '../../../assets/icons'
-import { colors, IconsProps, Theme } from '../../../types'
+import { fillColors, IconsProps, Theme } from '../../../types'
 
 export type IconType = 'flag-PE' | 'flag-US' | 'nav-arrow'
 
@@ -19,5 +19,5 @@ const icons: Record<IconType, (props: IconsProps) => JSX.Element> = {
 export const Icon = ({ type, ...rest }: IconProps) => {
   const getIcon = icons[type]
 
-  return getIcon({ ...rest, color: colors[rest.color ?? 'primary'] })
+  return getIcon({ ...rest, color: fillColors[rest.color ?? 'primary'] })
 }

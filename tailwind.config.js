@@ -31,6 +31,11 @@ module.exports = {
       fontFamily: {
         JetBrainsMono: ['JetBrainsMono'],
       },
+      fontSize: {
+        h1: 'clamp(1rem, 0.6770rem + 1.3781vw, 2rem)',
+        h2: 'clamp(0.875rem, 0.5520rem + 1.3781vw, 1.875rem)',
+        h3: 'clamp(0.75rem, 0.4270rem + 1.3781vw, 1.75rem)',
+      },
     },
   },
 }

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/jcarlos0511/personal-site/compare/v0.4.0...v0.5.0) (2022-05-07)
+
+
+### Features
+
+* add atom heading ([8781237](https://github.com/jcarlos0511/personal-site/commit/87812376aa0cb4e59d3151b97a76f9be5f7ca7cc))
+
 ## [0.4.0](https://github.com/jcarlos0511/personal-site/compare/v0.3.1...v0.4.0) (2022-05-05)
 
 
