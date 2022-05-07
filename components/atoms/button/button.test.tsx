@@ -3,7 +3,7 @@ import { render, fireEvent, screen } from '@testing-library/react'
 
 import { Button } from '.'
 
-describe('atoms/button', () => {
+describe('atoms/Button', () => {
   it('should shows proper label when rendered', () => {
     render(<Button label="Primary" />)
     const button = screen.getByText('Primary')
