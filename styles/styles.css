@@ -569,14 +569,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: row;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -605,6 +597,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
 }
 
 .rounded {
@@ -644,6 +640,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.indent-8 {
+  text-indent: 2rem;
+}
+
 .font-JetBrainsMono {
   font-family: JetBrainsMono;
 }
@@ -654,19 +666,27 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-h1 {
-  font-size: clamp(1rem, 0.6770rem + 1.3781vw, 2rem);
+  font-size: clamp(1.25rem, 1.0587rem + 0.8503vw, 1.875rem);
 }
 
 .text-h2 {
-  font-size: clamp(0.875rem, 0.5520rem + 1.3781vw, 1.875rem);
+  font-size: clamp(1.15rem, 0.9663rem + 0.8163vw, 1.75rem);
 }
 
 .text-h3 {
-  font-size: clamp(0.75rem, 0.4270rem + 1.3781vw, 1.75rem);
+  font-size: clamp(1.05rem, 0.8663rem + 0.8163vw, 1.65rem);
+}
+
+.text-paragraph {
+  font-size: clamp(0.75rem, 0.6735rem + 0.3401vw, 1rem);
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .tracking-wide {

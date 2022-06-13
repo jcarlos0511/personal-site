@@ -11,6 +11,7 @@ export type Theme = {
     | 'primary-light'
     | 'transparent'
     | 'white'
+  text: 'paragraph' | 'span'
 }
 
 export const fillColors: Record<Theme['color'], string> = {
@@ -35,15 +36,21 @@ export const textColors: Record<Theme['color'], string> = {
   'primary-light': 'text-primary-light',
 }
 
-export const textAlignment: Record<Theme['alignment'], string> = {
+export const headingAlignment: Record<Theme['alignment'], string> = {
   start: 'w-full flex flex-row items-center justify-start',
   center: 'w-full flex flex-row items-center justify-center',
   end: 'w-full flex flex-row items-center justify-end',
 }
 
-export type Direction = 'up' | 'down' | 'left' | 'right'
+export const textAlignment: Record<Theme['alignment'], string> = {
+  start: 'text-left indent-8 whitespace-pre-line',
+  center: 'text-center whitespace-pre-line',
+  end: 'text-right whitespace-pre-line',
+}
 
-export const classesDirection: Record<Direction, string> = {
+export type IconDirection = 'up' | 'down' | 'left' | 'right'
+
+export const classesDirection: Record<IconDirection, string> = {
   down: 'rotate-180',
   left: '-rotate-90',
   right: 'rotate-90',
@@ -51,6 +58,6 @@ export const classesDirection: Record<Direction, string> = {
 }
 export interface IconsProps extends SVGProps<SVGSVGElement> {
   color?: string
-  direction?: Direction
+  direction?: IconDirection
   size?: number
 }
