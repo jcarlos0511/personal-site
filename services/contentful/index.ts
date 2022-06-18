@@ -23,11 +23,7 @@ const getPageEntries = async <T = unknown>(
   content_type: string,
   isPreview?: boolean,
   query?: Record<string, unknown>
-) => {
-  const entries = await getEntries<T>({ content_type, ...query }, isPreview)
-
-  return entries
-}
+) => await getEntries<T>({ content_type, ...query }, isPreview)
 
 export const getPageBySlug = async (
   slug: string,
