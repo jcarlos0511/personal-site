@@ -35,7 +35,7 @@ export const getStaticProps = async ({
       props: {
         ...page,
         isPreview,
-        notFound: !page,
+        notFound: false,
       },
     }
   }
