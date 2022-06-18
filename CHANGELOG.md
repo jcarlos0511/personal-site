@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/jcarlos0511/personal-site/compare/v0.5.0...v0.6.0) (2022-06-18)
+
+
+### Features
+
+* add atom text ([2760dac](https://github.com/jcarlos0511/personal-site/commit/2760dacaa330a729f0c7dc57154dd163b46fc226))
+* add mode preview ([9661d76](https://github.com/jcarlos0511/personal-site/commit/9661d76e607d8bd639d26be7299f1046daa2ed55))
+
 ## [0.5.0](https://github.com/jcarlos0511/personal-site/compare/v0.4.0...v0.5.0) (2022-05-07)
 
 
