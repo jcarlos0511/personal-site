@@ -1,15 +1,15 @@
 import { HTMLAttributes } from 'react'
 
-import { textAlignment, textColors, Theme } from '../../../types'
+import { headingAlignment, textColors, Theme } from '../../../types'
 
-export const H1 = ({
+const H1 = ({
   alignment = 'start',
   label = '',
   color = 'black',
   ...rest
 }: Omit<HeadingProps, 'as'>) => {
   return (
-    <div className={`${textAlignment[alignment]}`}>
+    <div className={`${headingAlignment[alignment]}`}>
       <h1
         {...rest}
         className={`w-fit font-JetBrainsMono text-h1 font-medium ${
@@ -22,14 +22,14 @@ export const H1 = ({
   )
 }
 
-export const H2 = ({
+const H2 = ({
   alignment = 'start',
   label = '',
   color = 'black',
   ...rest
 }: Omit<HeadingProps, 'as'>) => {
   return (
-    <div className={`${textAlignment[alignment]}`}>
+    <div className={`${headingAlignment[alignment]}`}>
       <h2
         {...rest}
         className={`w-fit font-JetBrainsMono text-h2 font-medium ${
@@ -42,14 +42,14 @@ export const H2 = ({
   )
 }
 
-export const H3 = ({
+const H3 = ({
   alignment = 'start',
   label = '',
   color = 'black',
   ...rest
 }: Omit<HeadingProps, 'as'>) => {
   return (
-    <div className={`${textAlignment[alignment]}`}>
+    <div className={`${headingAlignment[alignment]}`}>
       <h3
         {...rest}
         className={`w-fit font-JetBrainsMono text-h3 font-medium ${

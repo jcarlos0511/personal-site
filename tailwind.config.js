@@ -32,9 +32,10 @@ module.exports = {
         JetBrainsMono: ['JetBrainsMono'],
       },
       fontSize: {
-        h1: 'clamp(1rem, 0.6770rem + 1.3781vw, 2rem)',
-        h2: 'clamp(0.875rem, 0.5520rem + 1.3781vw, 1.875rem)',
-        h3: 'clamp(0.75rem, 0.4270rem + 1.3781vw, 1.75rem)',
+        h1: 'clamp(1.25rem, 1.0587rem + 0.8503vw, 1.875rem)',
+        h2: 'clamp(1.15rem, 0.9663rem + 0.8163vw, 1.75rem)',
+        h3: 'clamp(1.05rem, 0.8663rem + 0.8163vw, 1.65rem)',
+        paragraph: 'clamp(0.75rem, 0.6735rem + 0.3401vw, 1rem)',
       },
     },
   },
