@@ -520,6 +520,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.static {
+  position: static;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -538,6 +542,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-12 {
   height: 3rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-fit {
@@ -567,6 +575,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-row {
   flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -633,6 +645,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-background {
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-3 {
