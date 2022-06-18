@@ -3,7 +3,7 @@
 import { Entry } from 'contentful'
 
 export const cleanContentfulEntry = <
-  T = Record<string, any & { fields?: Record<string, any> }>
+  T = Record<string, { fields?: Record<string, any> }>
 >(
   data: Entry<T>
 ) => {
