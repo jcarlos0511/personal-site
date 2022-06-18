@@ -520,6 +520,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.static {
+  position: static;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -540,18 +544,75 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-90 {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
 }
 
 .rounded {
@@ -567,13 +628,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 112 243 / var(--tw-border-opacity));
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
 .border-background {
   --tw-border-opacity: 1;
   border-color: rgb(30 30 30 / var(--tw-border-opacity));
-}
-
-.border-transparent {
-  border-color: transparent;
 }
 
 .bg-primary {
@@ -586,9 +647,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.indent-8 {
+  text-indent: 2rem;
 }
 
 .font-JetBrainsMono {
@@ -600,8 +681,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
+.text-h1 {
+  font-size: clamp(1.25rem, 1.0587rem + 0.8503vw, 1.875rem);
+}
+
+.text-h2 {
+  font-size: clamp(1.15rem, 0.9663rem + 0.8163vw, 1.75rem);
+}
+
+.text-h3 {
+  font-size: clamp(1.05rem, 0.8663rem + 0.8163vw, 1.65rem);
+}
+
+.text-paragraph {
+  font-size: clamp(0.75rem, 0.6735rem + 0.3401vw, 1rem);
+}
+
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-foreground {
@@ -612,6 +717,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-background {
   --tw-text-opacity: 1;
   color: rgb(30 30 30 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 112 243 / var(--tw-text-opacity));
+}
+
+.text-primary-light {
+  --tw-text-opacity: 1;
+  color: rgb(50 145 255 / var(--tw-text-opacity));
 }
 
 .shadow-sm {
@@ -658,12 +787,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.hover\:shadow:hover {
-  --tw-shadow: 0 5px 10px rgba(0,0,0,.12);
-  --tw-shadow-colored: 0 5px 10px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:shadow-md:hover {

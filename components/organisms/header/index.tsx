@@ -1,5 +1,5 @@
-import React from 'react'
+import { ContentfulHeader } from '../../../types'
 
-export const Header = () => {
-  return <header>Header.tsx</header>
+export const Header = ({ nameLogo }: ContentfulHeader) => {
+  return <header>{nameLogo}</header>
 }
