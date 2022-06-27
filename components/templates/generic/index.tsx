@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { ReactNode } from 'react'
 
-import { PageProps } from '../../../pages/[[...slug]]'
+import { PreviewProps } from '../../../pages/[[...slug]]'
 import { Footer, Header, Main } from '../../organisms'
+import { ContentfulPage } from '../../../types'
 
 const PreviewBanner = () => (
   <div className="w-full p-2 text-center">
@@ -14,17 +14,15 @@ const PreviewBanner = () => (
   </div>
 )
 
-type LayoutProps = Omit<PageProps, 'slug'> & {
-  children?: ReactNode
-}
+type GenericProps = Omit<ContentfulPage, 'slug'> & PreviewProps
 
-export const Layout = ({
-  children,
+export const Generic = ({
   footer,
   header,
   isPreview,
+  main,
   title,
-}: LayoutProps) => {
+}: GenericProps) => {
   return (
     <>
       <Head>
@@ -35,7 +33,7 @@ export const Layout = ({
 
       {isPreview && <PreviewBanner />}
       <Header {...header} />
-      <Main>{children}</Main>
+      <Main {...main} />
       <Footer {...footer} />
     </>
   )

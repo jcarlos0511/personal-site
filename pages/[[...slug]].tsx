@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticPropsContext } from 'next'
 
-import { Layout } from '../components/templates'
+import { Generic } from '../components/templates'
 import { getAllSlugs, getPageBySlug } from '../services'
 import { ContentfulPage } from '../types'
 
@@ -40,26 +40,23 @@ export const getStaticProps = async ({
     }
   }
 
-  return { props: { notFound: true } }
+  return { notFound: true }
 }
-
+export type PreviewProps = { isPreview?: boolean }
 export type NotFoundPageProps = { notFound: boolean }
-export type PageProps = ContentfulPage
 
-const Page = (props: PageProps | NotFoundPageProps) => {
-  const { title, isPreview, header, footer } = props as PageProps
+const Page = (props: (ContentfulPage & PreviewProps) | NotFoundPageProps) => {
+  const { title, isPreview, header, footer, main } = props as ContentfulPage &
+    PreviewProps
 
   return (
-    <>
-      <Layout
-        footer={footer}
-        header={header}
-        isPreview={isPreview}
-        title={title}
-      >
-        demo
-      </Layout>
-    </>
+    <Generic
+      footer={footer}
+      header={header}
+      isPreview={isPreview}
+      main={main}
+      title={title}
+    />
   )
 }
 

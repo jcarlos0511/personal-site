@@ -1,8 +1,5 @@
-import { ReactNode } from 'react'
+import { ContentfulMain } from '../../../types'
 
-interface MainProps {
-  children?: ReactNode
-}
-export const Main = ({ children }: MainProps) => {
-  return <main className="flex min-h-screen flex-col">{children}</main>
+export const Main = ({ title }: ContentfulMain) => {
+  return <main className="flex min-h-screen flex-col">{title}</main>
 }

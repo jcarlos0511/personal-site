@@ -30,6 +30,9 @@ const securityHeaders = [
 ]
 
 const nextConfig = {
+  images: {
+    domains: ['images.ctfassets.net'],
+  },
   reactStrictMode: true,
   async headers() {
     return [

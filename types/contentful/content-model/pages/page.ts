@@ -1,12 +1,13 @@
-import { ContentfulFooter, ContentfulHeader } from '../organisms'
+import {
+  ContentfulFooter,
+  ContentfulHeader,
+  ContentfulMain,
+} from '../organisms'
 
-export type ContentfulGenericPage<T = undefined> = {
+export type ContentfulPage = {
   footer: ContentfulFooter
   header: ContentfulHeader
-  isPreview?: string
+  main: ContentfulMain
   slug: string
-  template?: T
   title: string
 }
-
-export type ContentfulPage<T = undefined> = ContentfulGenericPage<T>

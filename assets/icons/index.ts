@@ -1,3 +1,5 @@
-export * from './flag-us-icon'
 export * from './flag-pe-icon'
+export * from './flag-us-icon'
+export * from './logo-icon'
 export * from './nav-arrow-icon'
+export * from './sun-icon'

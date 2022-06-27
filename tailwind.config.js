@@ -12,7 +12,7 @@ module.exports = {
     ...defaultTheme,
     colors: {
       black: '#000000',
-      background: '#1E1E1E',
+      background: '#071013',
       foreground: '#E0F2FE',
       transparent: 'transparent',
       white: '#FFFFFF',
