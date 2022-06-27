@@ -524,6 +524,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: static;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .inline-block {
   display: inline-block;
 }

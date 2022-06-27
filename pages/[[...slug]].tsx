@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticPropsContext } from 'next'
+import { useRouter } from 'next/router'
 
 import { Generic } from '../components/templates'
 import { getAllSlugs, getPageBySlug } from '../services'
@@ -46,6 +47,10 @@ export type PreviewProps = { isPreview?: boolean }
 export type NotFoundPageProps = { notFound: boolean }
 
 const Page = (props: (ContentfulPage & PreviewProps) | NotFoundPageProps) => {
+  const router = useRouter()
+
+  if (router.isFallback) return <p>Loading...</p>
+
   const { title, isPreview, header, footer, main } = props as ContentfulPage &
     PreviewProps
 
