@@ -1,6 +1,12 @@
 export enum ContentType {
-  FOOTER = 'orFooter',
-  HEADER = 'orHeader',
+  // atoms
+  LINK = 'link',
 
-  PAGE = 'pgPage',
+  // organisms
+  FOOTER = 'footer',
+  HEADER = 'header',
+  MAIN = 'main',
+
+  // pages
+  PAGE = 'page',
 }

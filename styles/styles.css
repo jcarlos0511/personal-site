@@ -524,6 +524,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: static;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -634,7 +643,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-background {
   --tw-border-opacity: 1;
-  border-color: rgb(30 30 30 / var(--tw-border-opacity));
+  border-color: rgb(7 16 19 / var(--tw-border-opacity));
 }
 
 .bg-primary {
@@ -644,7 +653,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-background {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
+  background-color: rgb(7 16 19 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-2 {
@@ -716,7 +729,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-background {
   --tw-text-opacity: 1;
-  color: rgb(30 30 30 / var(--tw-text-opacity));
+  color: rgb(7 16 19 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -755,7 +768,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .shadow-background {
-  --tw-shadow-color: #1E1E1E;
+  --tw-shadow-color: #071013;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -801,6 +814,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .hover\:shadow-background:hover {
-  --tw-shadow-color: #1E1E1E;
+  --tw-shadow-color: #071013;
   --tw-shadow: var(--tw-shadow-colored);
 }

@@ -22,11 +22,11 @@ const classesButtonSize: Record<ButtonSize, string> = {
 
 const classesButtonVariant: Record<ButtonVariant, string> = {
   [ButtonVariant.PRIMARY]:
-    'border-primary bg-primary text-foreground hover:text-white shadow-primary-light hover:shadow-primary-light hover:shadow-md',
+    'border-primary bg-primary text-foreground hover:text-white shadow-primary-light hover:shadow-primary-light hover:shadow-md hover:-translate-y-0.5',
   [ButtonVariant.SECONDARY]:
-    'border-transparent text-background hover:text-black hover:shadow-md',
+    'border-transparent text-background hover:text-black hover:shadow-md hover:-translate-y-0.5',
   [ButtonVariant.TERTIARY]:
-    'border-background bg-background text-foreground hover:text-white shadow-background hover:shadow-background hover:shadow-md',
+    'border-background bg-background text-foreground hover:text-white shadow-background hover:shadow-background hover:shadow-md hover:-translate-y-0.5',
 }
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -49,7 +49,7 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`flex items-center justify-between gap-2 rounded border px-3 shadow-sm transition-all ease-in-out hover:-translate-y-0.5 ${
+      className={`flex items-center justify-between gap-2 rounded border px-3 shadow-sm transition-all ease-in-out  ${
         classesButtonSize[size]
       } ${classesButtonVariant[variant]} ${rest.className ?? ''}`}
       {...rest}
