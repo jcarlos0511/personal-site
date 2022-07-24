@@ -11,16 +11,21 @@ export type Theme = {
     | 'primary-light'
     | 'transparent'
     | 'white'
+    | 'whiteSmoke'
+    | 'gray'
   text: 'paragraph' | 'span'
 }
 
 export const fillColors: Record<Theme['color'], string> = {
-  background: '#1E1E1E',
   black: '#000000',
+  background: '#071013',
   foreground: '#E0F2FE',
   transparent: 'transparent',
   white: '#FFFFFF',
+  whiteSmoke: '#f8f9fa',
+  gray: '#888888',
 
+  // buttons
   primary: '#0070F3',
   'primary-light': '#3291ff',
 }
@@ -31,6 +36,8 @@ export const textColors: Record<Theme['color'], string> = {
   foreground: 'text-foreground',
   transparent: 'text-transparent',
   white: 'text-white',
+  whiteSmoke: 'text-whiteSmoke',
+  gray: 'text-gray',
 
   primary: 'text-primary',
   'primary-light': 'text-primary-light',
@@ -60,4 +67,10 @@ export interface IconsProps extends SVGProps<SVGSVGElement> {
   color?: string
   direction?: IconDirection
   size?: number
+}
+
+export enum LinkVariant {
+  PRIMARY = 'primary',
+  SECONDARY = 'secondary',
+  OUTLINE = 'outline',
 }

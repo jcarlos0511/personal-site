@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/jcarlos0511/personal-site/compare/v0.7.0...v0.8.0) (2022-07-24)
+
+
+### Features
+
+* add atom link ([29bb332](https://github.com/jcarlos0511/personal-site/commit/29bb332b1a1cc49e517e8b0207c947409d3cc7ed))
+
 ## [0.7.0](https://github.com/jcarlos0511/personal-site/compare/v0.5.0...v0.7.0) (2022-07-16)
 
 

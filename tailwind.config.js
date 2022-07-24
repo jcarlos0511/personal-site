@@ -16,6 +16,8 @@ module.exports = {
       foreground: '#E0F2FE',
       transparent: 'transparent',
       white: '#FFFFFF',
+      whiteSmoke: '#f8f9fa',
+      gray: '#888888',
 
       // buttons
       primary: '#0070F3',
