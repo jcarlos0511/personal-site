@@ -3,7 +3,7 @@ import '../styles/styles.css'
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds: {
-    default: 'light',
+    default: 'dark',
   },
   controls: {
     matchers: {

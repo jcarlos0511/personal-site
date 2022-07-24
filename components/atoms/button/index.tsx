@@ -49,9 +49,10 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`flex items-center justify-between gap-2 rounded border px-3 shadow-sm transition-all ease-in-out  ${
-        classesButtonSize[size]
-      } ${classesButtonVariant[variant]} ${rest.className ?? ''}`}
+      className={`flex items-center justify-between gap-2 rounded border px-3 shadow-sm transition-all ease-in-out 
+      ${classesButtonSize[size]} 
+      ${classesButtonVariant[variant]} 
+      ${rest.className ?? ''}`}
       {...rest}
     >
       {iconLeft && (
